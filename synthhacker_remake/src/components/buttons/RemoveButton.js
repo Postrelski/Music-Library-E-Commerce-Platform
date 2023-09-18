@@ -1,8 +1,5 @@
-import { useState } from "react";
-
 function RemoveButton(props) {
   let products = [];
-
   if (localStorage.getItem("PRODUCT_ARRAY")) {
     products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
   }
