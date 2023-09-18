@@ -8,10 +8,6 @@ function Item2(props) {
   const img = image;
   let products = [];
 
-  const [cartNum, setCartNum] = useState(
-    Number(window.localStorage.getItem("CART_NUM"))
-  );
-
   const [product2Num, setProduct2Num] = useState(
     Number(window.localStorage.getItem("PRODUCT2_NUM"))
   );
@@ -22,23 +18,17 @@ function Item2(props) {
 
   window.localStorage.setItem("PRODUCT2_NUM", JSON.stringify(product2Num));
 
-  updateCart();
-
   // have the cart-item buttons trigger these functions
   function addItemHandler() {
     setProduct2Num(product2Num + 1);
-    setCartNum(cartNum + 1);
-    window.localStorage.setItem("CART_NUM", JSON.stringify(cartNum + 1));
     updateProduct();
   }
 
   function removeItemHandler() {
     if (
-      cartNum > 0 &&
+      products.length > 0 &&
       Number(window.localStorage.getItem("PRODUCT2_NUM") > 0)
     ) {
-      setCartNum(cartNum - 1);
-      window.localStorage.setItem("CART_NUM", JSON.stringify(cartNum - 1));
       setProduct2Num(product2Num - 1);
       window.localStorage.setItem(
         "PRODUCT2_NUM",
@@ -46,14 +36,6 @@ function Item2(props) {
       );
       removeProduct();
     }
-  }
-
-  function updateCart() {
-    let cartTotal =
-      Number(JSON.parse(localStorage.getItem("PRODUCT1_NUM"))) +
-      Number(JSON.parse(localStorage.getItem("PRODUCT2_NUM"))) +
-      Number(JSON.parse(localStorage.getItem("PRODUCT3_NUM")));
-    window.localStorage.setItem("CART_NUM", JSON.stringify(cartTotal));
   }
 
   function updateProduct() {
@@ -81,7 +63,7 @@ function Item2(props) {
 
   return (
     <>
-      <Navbar cartTotal={cartNum} />
+      <Navbar />
       <h2>Item Page</h2>
       <img src={img} />
       <h3>{title}</h3>

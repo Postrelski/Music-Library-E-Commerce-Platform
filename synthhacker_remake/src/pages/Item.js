@@ -18,7 +18,6 @@ function Item(props) {
 
   window.localStorage.setItem("PRODUCT1_NUM", JSON.stringify(product1Num));
 
-  // have the cart-item buttons trigger these functions
   function addItemHandler() {
     setProduct1Num(product1Num + 1);
     updateProduct();

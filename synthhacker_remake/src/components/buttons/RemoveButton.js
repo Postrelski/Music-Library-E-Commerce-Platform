@@ -1,9 +1,37 @@
+import { useState } from "react";
+
 function RemoveButton(props) {
-  function print() {
-    console.log("Inside of RemoveButton.js, id = ", props.id);
+  let products = [];
+
+  if (localStorage.getItem("PRODUCT_ARRAY")) {
+    products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
   }
 
-  return <button onClick={print}>Remove Me</button>;
+  let quantity = 0;
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].productID == props.id) {
+      quantity++;
+    }
+  }
+
+  function removeItemHandler() {
+    if (quantity > 0) {
+      removeProduct();
+      props.update();
+    }
+  }
+
+  function removeProduct() {
+    for (let i = 0; i <= products.length; i++) {
+      if (products[i].productID == props.id) {
+        products.splice(i, 1);
+        window.localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(products));
+        break;
+      }
+    }
+  }
+
+  return <button onClick={removeItemHandler}>Remove Me</button>;
 }
 
 export default RemoveButton;

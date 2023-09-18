@@ -17,7 +17,11 @@ function CartItems(props) {
         localName={props.localName}
         update={props.onSetUpdate}
       ></AddButton>
-      <RemoveButton id={props.id}></RemoveButton>
+      <RemoveButton
+        id={props.id}
+        localName={props.localName}
+        update={props.onSetUpdate}
+      ></RemoveButton>
     </div>
   );
 }
