@@ -1,3 +1,5 @@
+import "./Buttons.css";
+
 function RemoveButton(props) {
   let products = [];
   if (localStorage.getItem("PRODUCT_ARRAY")) {
