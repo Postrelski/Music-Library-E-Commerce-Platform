@@ -3,22 +3,21 @@ import Navbar from "../components/Navbar";
 import CartItems from "../components/CartItems";
 
 function Cart() {
-  const [update, setUpdate] = useState(true);
-  let products = [];
-  const product1_price = 10;
-  const product2_price = 15;
-  let product1_quantity = 0;
-  let product2_quantity = 0;
-
   // this is literally just to reload the page....
+  const [update, setUpdate] = useState(true);
   function updateTime() {
-    // console.log("update!");
     if (update == true) {
       setUpdate(false);
     } else {
       setUpdate(true);
     }
   }
+
+  let products = [];
+  const product1_price = 10;
+  const product2_price = 15;
+  let product1_quantity = 0;
+  let product2_quantity = 0;
 
   if (localStorage.getItem("PRODUCT_ARRAY")) {
     products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
@@ -39,27 +38,30 @@ function Cart() {
   return (
     <>
       <Navbar />
-      {product1_quantity && (
+      {product1_quantity ? (
         <CartItems
           href="Item"
           title="Product 1"
-          id="1"
           quantity={product1_quantity}
           price={product1_price}
-          localName="PRODUCT1_NUM"
+          id="1"
           onSetUpdate={updateTime}
         />
+      ) : (
+        <p></p>
       )}
-      {product2_quantity && (
+
+      {product2_quantity ? (
         <CartItems
           href="Item2"
           title="Product 2"
           id="2"
           quantity={product2_quantity}
           price={product2_price}
-          localName="PRODUCT2_NUM"
           onSetUpdate={updateTime}
         />
+      ) : (
+        <p></p>
       )}
 
       <div className="checkout_box">

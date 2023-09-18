@@ -12,16 +12,8 @@ function CartItems(props) {
       <p>Title: {props.title}</p>
       <p>quantity: {props.quantity}</p>
       <p>Total = ${props.quantity * props.price}</p>
-      <AddButton
-        id={props.id}
-        localName={props.localName}
-        update={props.onSetUpdate}
-      ></AddButton>
-      <RemoveButton
-        id={props.id}
-        localName={props.localName}
-        update={props.onSetUpdate}
-      ></RemoveButton>
+      <AddButton id={props.id} update={props.onSetUpdate}></AddButton>
+      <RemoveButton id={props.id} update={props.onSetUpdate}></RemoveButton>
     </div>
   );
 }
