@@ -1,0 +1,36 @@
+.nav-container {
+    background-color: rgb(240, 240, 240);
+}
+
+.logo{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.tabs{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.tabs a{
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.cart{
+    text-align: end;
+}
+
+.cart a{
+    text-decoration: none;
+    color: black;    
+}
