@@ -26,8 +26,18 @@ function Item2(props) {
       <img src={img} />
       <h3>{title}</h3>
       <p>{price}</p>
-      <AddButton id="2" price={price} update={updateTime}></AddButton>
-      <RemoveButton id="2" price={price} update={updateTime}></RemoveButton>
+      <AddButton
+        id="2"
+        price={price}
+        update={updateTime}
+        title={title}
+      ></AddButton>
+      <RemoveButton
+        id="2"
+        price={price}
+        update={updateTime}
+        title={title}
+      ></RemoveButton>
     </>
   );
 }

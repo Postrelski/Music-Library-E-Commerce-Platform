@@ -14,57 +14,30 @@ function Cart() {
   }
 
   let products = [];
-  // const product1_price = 10;
-  // const product2_price = 15;
-
   if (localStorage.getItem("PRODUCT_ARRAY")) {
     products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
   }
 
-  // for (let i = 0; i < products.length; i++) {
-  //   if (products[i].productID == 1) {
-  //     product1_quantity++;
-  //   }
-  //   if (products[i].productID == 2) {
-  //     product2_quantity++;
-  //   }
-  // }
-
-  // const total = 5;
-  //   product1_price * product1_quantity + product2_price * product2_quantity;
+  let total = 0;
+  products.map((x) => (total += Number(x.quantity) * Number(x.price)));
 
   return (
     <>
       <Navbar />
 
-      {/* {product1_quantity ? (
+      {products.map((x) => (
         <CartItems
-          href="Item"
-          title="Product 1"
-          quantity={product1_quantity}
-          price={product1_price}
-          id="1"
+          id={x.productID}
+          key={x.productID}
+          title={x.title}
+          quantity={x.quantity}
+          total={Number(x.quantity) * Number(x.price)}
           onSetUpdate={updateTime}
         />
-      ) : (
-        <p></p>
-      )}
-
-      {product2_quantity ? (
-        <CartItems
-          href="Item2"
-          title="Product 2"
-          id="2"
-          quantity={product2_quantity}
-          price={product2_price}
-          onSetUpdate={updateTime}
-        />
-      ) : (
-        <p></p>
-      )} */}
+      ))}
 
       <div className="checkout_box">
-        <div>Subtotal $ USD</div>
+        <div>Subtotal ${total} USD</div>
         <button>CHECK OUT</button>
       </div>
     </>

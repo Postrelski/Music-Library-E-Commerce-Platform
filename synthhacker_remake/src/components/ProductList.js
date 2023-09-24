@@ -3,6 +3,7 @@ import "./ProductList.css";
 import pic from "../assets/synth.png";
 
 function ProductList(props) {
+  // add the arrows to toggle the products
   return (
     <div className="items">
       <Product title="Product1" price="10" pic={pic} href="/item" />

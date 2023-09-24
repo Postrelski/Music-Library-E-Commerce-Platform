@@ -18,6 +18,7 @@ function AddButton(props) {
       // if object not found, then push it with a quantity of 1
       products.push({
         productID: props.id,
+        title: props.title,
         quantity: 1,
         price: props.price,
       });
