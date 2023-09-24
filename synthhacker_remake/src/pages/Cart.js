@@ -14,31 +14,30 @@ function Cart() {
   }
 
   let products = [];
-  const product1_price = 10;
-  const product2_price = 15;
-  let product1_quantity = 0;
-  let product2_quantity = 0;
+  // const product1_price = 10;
+  // const product2_price = 15;
 
   if (localStorage.getItem("PRODUCT_ARRAY")) {
     products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
   }
 
-  for (let i = 0; i < products.length; i++) {
-    if (products[i].productID == 1) {
-      product1_quantity++;
-    }
-    if (products[i].productID == 2) {
-      product2_quantity++;
-    }
-  }
+  // for (let i = 0; i < products.length; i++) {
+  //   if (products[i].productID == 1) {
+  //     product1_quantity++;
+  //   }
+  //   if (products[i].productID == 2) {
+  //     product2_quantity++;
+  //   }
+  // }
 
-  const total =
-    product1_price * product1_quantity + product2_price * product2_quantity;
+  // const total = 5;
+  //   product1_price * product1_quantity + product2_price * product2_quantity;
 
   return (
     <>
       <Navbar />
-      {product1_quantity ? (
+
+      {/* {product1_quantity ? (
         <CartItems
           href="Item"
           title="Product 1"
@@ -62,10 +61,10 @@ function Cart() {
         />
       ) : (
         <p></p>
-      )}
+      )} */}
 
       <div className="checkout_box">
-        <div>Subtotal ${total} USD</div>
+        <div>Subtotal $ USD</div>
         <button>CHECK OUT</button>
       </div>
     </>

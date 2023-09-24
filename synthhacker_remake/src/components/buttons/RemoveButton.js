@@ -6,27 +6,21 @@ function RemoveButton(props) {
     products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
   }
 
-  let quantity = 0;
-  for (let i = 0; i < products.length; i++) {
-    if (products[i].productID == props.id) {
-      quantity++;
-    }
-  }
-
   function removeItemHandler() {
-    if (quantity > 0) {
-      removeProduct();
-      props.update();
-    }
-  }
+    const searchItem = props.id;
+    const foundObject = products.find((obj) => obj.productID === searchItem);
 
-  function removeProduct() {
-    for (let i = 0; i <= products.length; i++) {
-      if (products[i].productID == props.id) {
-        products.splice(i, 1);
-        window.localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(products));
-        break;
+    if (foundObject && foundObject.quantity > 0) {
+      foundObject.quantity--;
+
+      if (foundObject.quantity === 0) {
+        products = products.filter(function (el) {
+          return el.productID != props.id;
+        });
       }
+
+      props.update();
+      window.localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(products));
     }
   }
 

@@ -7,6 +7,12 @@ function Navbar(props) {
     products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
   }
 
+  // add all the quantities form the objects
+  let totalQuantity = 0;
+  for (let i = 0; i < products.length; i++) {
+    totalQuantity += products[i].quantity;
+  }
+
   return (
     <nav className="nav-container">
       <div className="logo">
@@ -19,7 +25,7 @@ function Navbar(props) {
         <a href="/contact">Contact</a>
       </div>
       <div className="cart">
-        <a href="/cart">Cart({products.length})</a>
+        <a href="/cart">Cart({totalQuantity})</a>
       </div>
     </nav>
   );

@@ -6,7 +6,7 @@ import image from "../assets/synth.png";
 
 function Item2(props) {
   const title = "Product 2";
-  const amount = 15;
+  const price = 15;
   const img = image;
 
   // this is literally just to reload the page....
@@ -25,9 +25,9 @@ function Item2(props) {
       <h2>Item Page</h2>
       <img src={img} />
       <h3>{title}</h3>
-      <p>{amount}</p>
-      <AddButton id="2" update={updateTime}></AddButton>
-      <RemoveButton id="2" update={updateTime}></RemoveButton>
+      <p>{price}</p>
+      <AddButton id="2" price={price} update={updateTime}></AddButton>
+      <RemoveButton id="2" price={price} update={updateTime}></RemoveButton>
     </>
   );
 }
