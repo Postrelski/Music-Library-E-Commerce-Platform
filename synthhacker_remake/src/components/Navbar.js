@@ -7,7 +7,7 @@ function Navbar(props) {
     products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
   }
 
-  // add all the quantities form the objects
+  // add all the quantities from the objects
   let totalQuantity = 0;
   for (let i = 0; i < products.length; i++) {
     totalQuantity += products[i].quantity;

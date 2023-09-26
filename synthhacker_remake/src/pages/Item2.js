@@ -22,7 +22,7 @@ function Item2(props) {
   return (
     <>
       <Navbar />
-      <h2>Item Page</h2>
+      <h2>Item 2 Page</h2>
       <img src={img} />
       <h3>{title}</h3>
       <p>{price}</p>

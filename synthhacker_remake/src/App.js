@@ -4,6 +4,7 @@ import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import Item from "./pages/Item";
 import Item2 from "./pages/Item2";
+import Item3 from "./pages/Item3";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/item" element={<Item />} />
           <Route path="/item2" element={<Item2 />} />
+          <Route path="/item3" element={<Item3 />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
