@@ -1,7 +1,16 @@
 .items{
+    margin: auto;
     display: flex;
     justify-content: space-around;
+    /* overflow: scroll;
+     */
+     /* border: 1px solid black; */
+     width: auto;
+     overflow: scroll;
+     scroll-behavior: smooth;
+    
 }
+
 
 .arrow{
     cursor: pointer;
@@ -20,3 +29,5 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+
