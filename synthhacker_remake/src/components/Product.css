@@ -1,8 +1,7 @@
 .product-container{
     text-align: center;
     height: 400px;
-    width: 440px;
-    border: 1px solid black;
+    width: 400px;
+    /* border: 1px solid black; */
     margin: 20px;
-    /* overflow:scroll; */
 }

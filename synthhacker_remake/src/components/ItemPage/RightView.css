@@ -1,0 +1,12 @@
+.title{
+ font-size: 40px;
+ opacity: .8;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+
+.price{
+    font-size: 20px;
+    opacity: .6;
+    font-weight: bold;
+   }

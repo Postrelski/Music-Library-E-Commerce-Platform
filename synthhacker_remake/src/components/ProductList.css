@@ -2,9 +2,6 @@
     margin: auto;
     display: flex;
     justify-content: space-around;
-    /* overflow: scroll;
-     */
-     /* border: 1px solid black; */
      width: auto;
      overflow: scroll;
      scroll-behavior: smooth;

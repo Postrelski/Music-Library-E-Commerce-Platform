@@ -1,0 +1,11 @@
+.leftViewContainer{
+    /* background-color: chartreuse; */
+    width: 30%;
+    opacity: .7;
+}
+
+@media (max-width: 1500px) {
+    .leftViewContainer{
+        width: 250px;
+    }
+  }
