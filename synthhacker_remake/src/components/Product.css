@@ -1,7 +1,16 @@
-.product-container{
+/* .product-container{
     text-align: center;
     height: 400px;
     width: 400px;
-    /* border: 1px solid black; */
     margin: 20px;
+} */
+
+.product-container{
+    text-align: center;
+    margin: 20px;
+}
+
+.product-container, img{
+    height: 100%;
+    width: 100%;
 }

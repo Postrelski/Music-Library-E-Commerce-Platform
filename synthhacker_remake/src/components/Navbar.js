@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 
 function Navbar(props) {
+  const [bars, setBars] = useState("tabs tabs-hidden");
   let products = [];
   if (localStorage.getItem("PRODUCT_ARRAY")) {
     products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
@@ -13,19 +14,38 @@ function Navbar(props) {
     totalQuantity += products[i].quantity;
   }
 
+  function barsIconHandler() {
+    if (bars === "tabs") {
+      setBars("tabs tabs-hidden");
+    } else {
+      setBars("tabs");
+    }
+  }
+
   return (
     <nav className="nav-container">
       <div className="logo">
         <a href="/home">Matthew Postrel Sounds</a>
       </div>
 
-      <div className="tabs">
+      <div className="nav-bars">
+        <i
+          onClick={barsIconHandler}
+          className="fa-solid fa-bars hamburger-icon"
+        ></i>
+
+        <div className="cart">
+          <a href="/cart">
+            <span className="cart-text">Cart({totalQuantity})</span>
+            <i className="fa-solid fa-cart-shopping cart-icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <div className={bars}>
         <a href="/serum">Serum</a>
         <a href="/drums">Drums</a>
         <a href="/contact">Contact</a>
-      </div>
-      <div className="cart">
-        <a href="/cart">Cart({totalQuantity})</a>
       </div>
     </nav>
   );

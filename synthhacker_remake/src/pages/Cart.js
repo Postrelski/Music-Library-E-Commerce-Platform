@@ -6,11 +6,7 @@ function Cart() {
   // this is literally just to reload the page....
   const [update, setUpdate] = useState(true);
   function updateTime() {
-    if (update == true) {
-      setUpdate(false);
-    } else {
-      setUpdate(true);
-    }
+    setUpdate(!update);
   }
 
   let products = [];

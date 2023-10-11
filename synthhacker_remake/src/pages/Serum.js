@@ -1,4 +1,3 @@
-import ProductList from "../components/ProductList";
 import Product from "../components/Product";
 import Navbar from "../components/Navbar";
 import pic from "../assets/synth.png";
