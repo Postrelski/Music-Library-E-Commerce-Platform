@@ -9,3 +9,20 @@
     text-align: right;
     padding-right: 100px;
 }
+
+.cart_images{
+    background-image: url(".././assets/synth.png");
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    cursor: pointer;
+
+    
+}
+
+.align{
+    margin: auto;
+    background-position: center;
+}

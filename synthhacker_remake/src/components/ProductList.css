@@ -11,7 +11,6 @@
 
 .arrow{
     cursor: pointer;
-    /* margin: 0; */
     margin-top: auto;
     margin-bottom: auto;
 
@@ -27,4 +26,23 @@
     padding-right: 10px;
 }
 
+/* square buttons */
+.rec.rec-arrow {
+    border-radius: 0;
+    background-color: rgb(255, 255, 255);
+}
 
+/* round buttons on hover */
+.rec.rec-arrow:hover {
+    border-radius: 50%;
+}
+
+/* hide disabled buttons */
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+
+
+button.rec-dot{
+    background-color: rgb(251, 251, 251);
+}

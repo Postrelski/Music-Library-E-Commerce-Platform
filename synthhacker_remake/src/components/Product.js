@@ -8,8 +8,10 @@ function Product(props, getFromChild) {
       <a href={props.href}>
         <img src={props.pic}></img>
       </a>
-      <a href={props.href}>{props.title}</a>
-      <p>${props.price}</p>
+      <a href={props.href}>
+        <p className="opacity">{props.title}</p>
+      </a>
+      <p className="opacity">${props.price}</p>
     </div>
   );
 }

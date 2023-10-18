@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import CartItems from "../components/CartItems";
+import "./styles/Cart.css";
 
 function Cart() {
   // this is literally just to reload the page....
@@ -29,6 +30,8 @@ function Cart() {
           quantity={x.quantity}
           total={Number(x.quantity) * Number(x.price)}
           onSetUpdate={updateTime}
+          href={x.href}
+          // need the href attribute?
         />
       ))}
 

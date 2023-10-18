@@ -7,11 +7,12 @@ function CartItems(props) {
   return (
     <div className="item_container">
       <a href={props.href}>
-        <img src={pic}></img>
+        {/* <img src={pic}></img> */}
+        <div className="cart_images"></div>
       </a>
-      <p>Title: {props.title}</p>
-      <p>quantity: {props.quantity}</p>
-      <p>Total = ${props.total}</p>
+      <p className="align">Title: {props.title}</p>
+      <p className="align">quantity: {props.quantity}</p>
+      <p className="align">Total = ${props.total}</p>
       <AddButton id={props.id} update={props.onSetUpdate}></AddButton>
       <RemoveButton id={props.id} update={props.onSetUpdate}></RemoveButton>
     </div>
