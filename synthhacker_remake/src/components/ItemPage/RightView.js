@@ -4,7 +4,7 @@ import "./RightView.css";
 
 function RightView(props) {
   return (
-    <div>
+    <div className="right_view_container">
       <p className="title">{props.title}</p>
       <p className="price">${props.price} USD</p>
       <AddButton

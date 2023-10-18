@@ -16,10 +16,14 @@ function Item3() {
   return (
     <>
       <Navbar />
-      <div className="itemsMidSection">
-        <LefftView />
-        <MidView />
-        <RightView id="3" price={price} update={updateTime} title={title} />
+      <div className="item_page_container">
+        <div className="itemsMidSection">
+          <LefftView />
+          <div className="image_buttons_pair">
+            <MidView />
+            <RightView id="3" price={price} update={updateTime} title={title} />
+          </div>
+        </div>
       </div>
     </>
   );

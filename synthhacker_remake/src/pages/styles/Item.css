@@ -3,3 +3,58 @@
     justify-content: space-around;
     margin-top: 100px;
 }
+
+/* Make the item pages responsive! */
+.image_buttons_pair{
+    display:contents;
+}
+
+@media (max-width: 1000px) {
+    .itemsMidSection{
+        flex-direction: column-reverse;
+    }
+
+    .image_buttons_pair{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .item_page_container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .leftViewContainer{
+        text-align: left;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .image_buttons_pair{
+        display: flex;
+        flex-direction: column;
+    }
+    .itemsMidSection{
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+    .item_page_container{
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .leftViewContainer{
+        text-align: left;
+        margin: auto;
+        width: 100%;
+    }
+    .midViewImage{
+        margin: auto;
+    }
+    .right_view_container{
+        margin-bottom: 100px;
+    }
+}
