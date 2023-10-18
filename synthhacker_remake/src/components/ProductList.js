@@ -7,7 +7,7 @@ import Carousel from "react-elastic-carousel";
 
 function ProductList(props) {
   const slides = [
-    { title: "Product 1", price: 10, href: "/item", pic: pic, key: 1 },
+    { title: "Product 1", price: 10, href: "/item1", pic: pic, key: 1 },
     { title: "Product 2", price: 15, href: "/item2", pic: pic, key: 2 },
     { title: "Product 3", price: 5, href: "/item3", pic: pic, key: 3 },
   ];

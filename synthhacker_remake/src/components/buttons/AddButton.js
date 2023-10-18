@@ -5,7 +5,6 @@ function AddButton(props) {
   if (localStorage.getItem("PRODUCT_ARRAY")) {
     products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
   }
-  console.log(products);
 
   function addItemHandler() {
     const searchItem = props.id;
@@ -29,7 +28,11 @@ function AddButton(props) {
     window.localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(products));
   }
 
-  return <button onClick={addItemHandler}>Add Me</button>;
+  return (
+    <button className="add_remove" onClick={addItemHandler}>
+      Add
+    </button>
+  );
 }
 
 export default AddButton;

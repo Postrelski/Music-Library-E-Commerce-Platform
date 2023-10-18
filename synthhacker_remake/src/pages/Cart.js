@@ -22,22 +22,26 @@ function Cart() {
     <>
       <Navbar />
 
-      {products.map((x) => (
-        <CartItems
-          id={x.productID}
-          key={x.productID}
-          title={x.title}
-          quantity={x.quantity}
-          total={Number(x.quantity) * Number(x.price)}
-          onSetUpdate={updateTime}
-          href={x.href}
-          // need the href attribute?
-        />
-      ))}
+      <div className="class_items_box">
+        {/* <span className="quantity">QUANTITY</span> */}
+        {/* <span className="total">TOTAL</span> */}
+
+        {products.map((x) => (
+          <CartItems
+            id={x.productID}
+            key={x.productID}
+            title={x.title}
+            quantity={x.quantity}
+            total={Number(x.quantity) * Number(x.price)}
+            onSetUpdate={updateTime}
+            href={`/item${x.productID}`}
+          />
+        ))}
+      </div>
 
       <div className="checkout_box">
         <div>Subtotal ${total} USD</div>
-        <button>CHECK OUT</button>
+        <button className="checkout_button">CHECK OUT</button>
       </div>
     </>
   );

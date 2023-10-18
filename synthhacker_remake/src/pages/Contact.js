@@ -1,12 +1,15 @@
 import Navbar from "../components/Navbar";
+import "./styles/Contact.css";
 
 function Contact() {
   return (
     <>
       <Navbar />
-      <h2>Contact Page</h2>
-      <p>Want to get in touch?</p>
-      <p>email: matthewpostrel5@gmail.com</p>
+      <div className="contact_container">
+        <h2>Contact Page</h2>
+        <p>Want to get in touch?</p>
+        <p>email me at: matthewpostrel5@gmail.com</p>
+      </div>
     </>
   );
 }

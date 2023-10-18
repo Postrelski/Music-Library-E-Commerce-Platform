@@ -1,5 +1,21 @@
-.cart_container{
-    /* border: 1px solid black; */
-    /* height: 100px; */
-    /* padding: 100px; */
+.class_items_box{  
+    border: 1px solid #a1a1a155;
+    padding: 10px;
+    margin: auto;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.checkout_box{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.checkout_box button{
+    margin-right: 0;
 }

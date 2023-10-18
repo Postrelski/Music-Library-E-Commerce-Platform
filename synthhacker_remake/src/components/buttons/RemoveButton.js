@@ -24,7 +24,11 @@ function RemoveButton(props) {
     }
   }
 
-  return <button onClick={removeItemHandler}>Remove Me</button>;
+  return (
+    <button className="add_remove" onClick={removeItemHandler}>
+      Remove
+    </button>
+  );
 }
 
 export default RemoveButton;

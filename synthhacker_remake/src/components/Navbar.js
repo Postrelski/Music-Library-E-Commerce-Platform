@@ -14,6 +14,7 @@ function Navbar(props) {
     totalQuantity += products[i].quantity;
   }
 
+  // dynamically set the nav icon
   function barsIconHandler() {
     if (bars === "tabs") {
       setBars("tabs tabs-hidden");

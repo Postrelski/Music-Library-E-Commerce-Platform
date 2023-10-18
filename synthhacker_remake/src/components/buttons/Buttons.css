@@ -15,7 +15,7 @@ button:hover{
     background-color: rgb(157, 157, 157);
 }
 
-button{
+.add_remove{
     margin: auto;
     margin-right: 10px;
     margin-left: 10px;

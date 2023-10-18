@@ -18,11 +18,40 @@
     background-repeat: no-repeat; 
     background-size: contain;
     cursor: pointer;
-
-    
 }
 
 .align{
     margin: auto;
     background-position: center;
+}
+
+.cart_fold{
+    display:contents;
+}
+
+
+@media (max-width: 780px) {
+    .cart_fold{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.item_container p {
+    font-size: 14px;
+    opacity: .7;
+}
+
+@media (max-width: 700px) {
+
+    /* .item_container{
+        flex-direction: column;
+        align-items: center;
+    } */
+    /* button{
+        width: 100px;
+        text-align: center;
+    } */
+
 }
