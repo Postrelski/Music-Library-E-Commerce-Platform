@@ -5,7 +5,6 @@
     width: auto;
     overflow: scroll;
     scroll-behavior: smooth;
-
 }
 
 
@@ -35,6 +34,8 @@
 /* round buttons on hover */
 .rec.rec-arrow:hover {
     /* border-radius: 50%; */
+    background-color: rgb(255, 255, 255);
+    
 }
 
 
@@ -48,8 +49,17 @@ button.rec-dot{
     display: none;
 }
 
+/* .rec.rec-arrow-left:hover:enabled,
+.rec.rec-arrow-right:hover:enabled{
+    background-color: rgb(255, 255, 255);
+} */
+
 .rec.rec-arrow-left:hover:enabled,
 .rec.rec-arrow-right:hover:enabled{
-    background-color: rgb(241, 241, 241);
-    /* box-shadow: 0 0 1px 3px var(--clr-primary-400); */
+    background-color: black;
+    box-shadow: 0 0 1px 3px var(--clr-primary-400);
+}
+
+.slider-container{
+    /* margin-bottom: 370px; */
 }

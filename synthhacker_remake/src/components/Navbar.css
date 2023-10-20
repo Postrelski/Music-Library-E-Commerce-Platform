@@ -1,5 +1,6 @@
 .nav-container {
-    background-color: rgb(245, 245, 245);
+    /* background-color: rgb(245, 245, 245); */
+    background-color: #F4F4F9;
 }
 
 .logo{
@@ -83,3 +84,8 @@
 .nav-bars{
     text-align: center;
 }
+
+/* .tabs a:hover{
+    background-color: rgb(215, 215, 215);
+    color: rgb(255, 255, 255);
+} */

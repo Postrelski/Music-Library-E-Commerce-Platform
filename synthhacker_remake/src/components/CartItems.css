@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-around;
     text-transform: uppercase;
+    padding: 10px;
 }
 
 .checkout_box{
@@ -54,4 +55,8 @@
         text-align: center;
     } */
 
+}
+
+.item_container:nth-child(odd){
+    background-color: #F4F4F9;
 }
