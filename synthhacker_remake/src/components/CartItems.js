@@ -17,8 +17,10 @@ function CartItems(props) {
         <p className="align">PRICE: ${props.total}</p>
       </div>
 
-      <AddButton id={props.id} update={props.onSetUpdate}></AddButton>
-      <RemoveButton id={props.id} update={props.onSetUpdate}></RemoveButton>
+      <div className="buttons_container">
+        <AddButton id={props.id} update={props.onSetUpdate}></AddButton>
+        <RemoveButton id={props.id} update={props.onSetUpdate}></RemoveButton>
+      </div>
     </div>
   );
 }

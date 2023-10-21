@@ -1,7 +1,7 @@
 .item_container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     text-transform: uppercase;
     padding: 10px;
 }
@@ -83,4 +83,9 @@
 
 .item_container:nth-child(odd){
     background-color: #F4F4F9;
+}
+
+.buttons_container{
+    margin: auto;
+    margin-right: 0;
 }

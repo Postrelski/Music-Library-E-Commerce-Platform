@@ -29,7 +29,7 @@ function AddButton(props) {
   }
 
   return (
-    <button className="add_remove" onClick={addItemHandler}>
+    <button className="add_remove addBTN" onClick={addItemHandler}>
       Add
     </button>
   );

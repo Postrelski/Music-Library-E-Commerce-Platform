@@ -19,6 +19,17 @@ function Item3() {
     <>
       <Navbar />
       <div className="item_page_container">
+        <div className="arrows_container">
+          <a href="/item2">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span> Previous Item</span>
+          </a>
+
+          {/* <a>
+            <span>Next Item </span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a> */}
+        </div>
         <div className="itemsMidSection">
           <LefftView />
           <div className="image_buttons_pair">

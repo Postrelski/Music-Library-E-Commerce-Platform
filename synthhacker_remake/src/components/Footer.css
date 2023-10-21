@@ -1,11 +1,12 @@
 footer {
     /* background-color: rgb(243, 243, 243); */
     background-color: #F4F4F9;
-    height: 2.5rem;
-    position: absolute;
+    height: 100px;
+    /* position: sticky; */
     bottom: 0;
     width: 100%;
     /* overflow: scroll; */
+    margin-top: 100%;
 }
 
 

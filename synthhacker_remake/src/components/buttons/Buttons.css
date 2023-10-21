@@ -8,7 +8,7 @@ button{
     padding-right: 30px;
     cursor: pointer;
     transition: .5s;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 button:hover{
@@ -16,10 +16,11 @@ button:hover{
 }
 
 .add_remove{
-    margin: auto;
+    margin-top: 5px;
+}
+
+.addBTN{
     margin-right: 10px;
-    margin-left: 10px;
-    
 }
 
 
