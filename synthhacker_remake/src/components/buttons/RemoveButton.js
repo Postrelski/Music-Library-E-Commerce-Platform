@@ -25,7 +25,7 @@ function RemoveButton(props) {
   }
 
   return (
-    <button className="add_remove" onClick={removeItemHandler}>
+    <button className="add_remove removeBTN" onClick={removeItemHandler}>
       Remove
     </button>
   );

@@ -1,10 +1,11 @@
 footer {
     /* background-color: rgb(243, 243, 243); */
     background-color: #F4F4F9;
-    height: 200px; 
+    height: 2.5rem;
     position: absolute;
     bottom: 0;
     width: 100%;
+    /* overflow: scroll; */
 }
 
 

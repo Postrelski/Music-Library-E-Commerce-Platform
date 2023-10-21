@@ -18,8 +18,11 @@
     padding-top: 50px;
     padding-bottom: 30px;
     text-align: center;
+    font-weight: bold;
 }
-
+.nav_tabs a{
+    opacity: .5;
+}
 .tabs a{
     margin: 20px;
     text-decoration: none;

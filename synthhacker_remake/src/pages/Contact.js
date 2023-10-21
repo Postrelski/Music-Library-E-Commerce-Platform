@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "./styles/Contact.css";
 
 function Contact() {
@@ -10,6 +11,7 @@ function Contact() {
         <p>Want to get in touch?</p>
         <p>email me at: matthewpostrel5@gmail.com</p>
       </div>
+      <Footer />
     </>
   );
 }

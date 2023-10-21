@@ -26,7 +26,7 @@ function Navbar(props) {
   return (
     <nav className="nav-container">
       <div className="logo">
-        <a href="/home">Matthew Postrel Sounds</a>
+        <a href="/home">MATTHEW // POSTREL</a>
       </div>
 
       <div className="nav-bars">
@@ -43,7 +43,7 @@ function Navbar(props) {
         </div>
       </div>
 
-      <div className={bars}>
+      <div className={`${bars} nav_tabs`}>
         <a href="/serum">Serum</a>
         <a href="/drums">Drums</a>
         <a href="/contact">Contact</a>

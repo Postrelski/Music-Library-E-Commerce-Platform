@@ -10,3 +10,19 @@
     opacity: .6;
     font-weight: bold;
    }
+.product_line{
+    opacity: .3;
+}
+
+.right_view_container{
+    width: 400px;
+    text-align: left;
+}
+
+
+@media (max-width: 1500px) {
+    .right_view_container{
+       
+        text-align: center;
+    }
+}

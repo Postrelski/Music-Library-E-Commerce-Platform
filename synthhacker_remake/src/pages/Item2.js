@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import LefftView from "../components/ItemPage/LeftView";
 import MidView from "../components/ItemPage/MidView";
 import RightView from "../components/ItemPage/RightView";
+import Footer from "../components/Footer";
+import pic from "../assets/pic2.png";
 
 function Item2() {
   const title = "Product 2";
@@ -21,11 +23,12 @@ function Item2() {
         <div className="itemsMidSection">
           <LefftView />
           <div className="image_buttons_pair">
-            <MidView />
+            <MidView image={pic} />
             <RightView id="2" price={price} update={updateTime} title={title} />
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

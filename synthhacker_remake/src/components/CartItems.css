@@ -11,8 +11,10 @@
     padding-right: 100px;
 }
 
-.cart_images{
-    background-image: url(".././assets/synth.png");
+/* variable will trigger different class, depending on id */
+/* I want to make this more dynamic */
+.cart_images1{
+    background-image: url(".././assets/pic1.png");
     height: 150px;
     width: 150px;
     background-position: center;
@@ -20,6 +22,28 @@
     background-size: contain;
     cursor: pointer;
 }
+
+.cart_images2{
+    background-image: url(".././assets/pic2.png");
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    cursor: pointer;
+}
+
+.cart_images3{
+    background-image: url(".././assets/pic3.png");
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    cursor: pointer;
+}
+/* -------- */
+
 
 .align{
     margin: auto;

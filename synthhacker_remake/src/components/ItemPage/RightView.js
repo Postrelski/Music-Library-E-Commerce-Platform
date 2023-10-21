@@ -5,6 +5,7 @@ import "./RightView.css";
 function RightView(props) {
   return (
     <div className="right_view_container">
+      <hr className="product_line"></hr>
       <p className="title">{props.title}</p>
       <p className="price">${props.price} USD</p>
       <AddButton

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import CartItems from "../components/CartItems";
+import Footer from "../components/Footer";
 import "./styles/Cart.css";
 
 function Cart() {
@@ -35,6 +36,7 @@ function Cart() {
             total={Number(x.quantity) * Number(x.price)}
             onSetUpdate={updateTime}
             href={`/item${x.productID}`}
+            image={`pic${x.productID}.png`}
           />
         ))}
       </div>
@@ -43,6 +45,7 @@ function Cart() {
         <div>Subtotal ${total} USD</div>
         <button className="checkout_button">CHECK OUT</button>
       </div>
+      <Footer />
     </>
   );
 }
