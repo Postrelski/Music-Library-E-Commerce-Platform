@@ -1,9 +1,8 @@
-import "./CartItems.css";
+import "./styles/CartItems.css";
 import AddButton from "./buttons/AddButton";
 import RemoveButton from "./buttons/RemoveButton";
 
 function CartItems(props) {
-  // Kind of ghetto solution but works for now
   const picVariable = `cart_images${props.id}`;
 
   return (

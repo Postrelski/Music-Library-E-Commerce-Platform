@@ -24,9 +24,6 @@ function Cart() {
       <Navbar />
 
       <div className="class_items_box">
-        {/* <span className="quantity">QUANTITY</span> */}
-        {/* <span className="total">TOTAL</span> */}
-
         {products.map((x) => (
           <CartItems
             id={x.productID}

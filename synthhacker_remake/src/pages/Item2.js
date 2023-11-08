@@ -4,11 +4,12 @@ import LefftView from "../components/ItemPage/LeftView";
 import MidView from "../components/ItemPage/MidView";
 import RightView from "../components/ItemPage/RightView";
 import Footer from "../components/Footer";
-import pic from "../assets/pic2.png";
+import data from "../data.json";
 
 function Item2() {
-  const title = "Product 2";
-  const price = 15;
+  const title = data[1].title;
+  const price = data[2].price;
+  const pic = data[1].pic;
 
   // this is literally just to reload the page....
   const [update, setUpdate] = useState(true);

@@ -1,0 +1,29 @@
+[
+    { 
+        "title": "Product 1", 
+        "price": 10, 
+        "href": "/item1", 
+        "pic": "../images/pic1.png", 
+        "key": 1 ,
+        "id": 1,
+        "desc": "Info about product 1."
+    },
+    { 
+        "title": "Product 2", 
+        "price": 15, 
+        "href": "/item2", 
+        "pic": "../images/pic2.png", 
+        "key": 2, 
+        "id": 2 ,
+        "desc": "Info about product 2."
+    },
+    { 
+        "title": "Product 3", 
+        "price": 5, 
+        "href": "/item3", 
+        "pic": "../images/pic3.png", 
+        "key": 3,
+        "id": 3 ,
+        "desc": "Info about product 3."
+    }
+]

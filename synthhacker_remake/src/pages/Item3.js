@@ -4,11 +4,12 @@ import LefftView from "../components/ItemPage/LeftView";
 import MidView from "../components/ItemPage/MidView";
 import RightView from "../components/ItemPage/RightView";
 import Footer from "../components/Footer";
-import pic from "../assets/pic3.png";
+import data from "../data.json";
 
 function Item3() {
-  const title = "Product 3";
-  const price = 5;
+  const title = data[2].title;
+  const price = data[2].price;
+  const pic = data[2].pic;
 
   // this is literally just to reload the page....
   const [update, setUpdate] = useState(true);
@@ -24,11 +25,6 @@ function Item3() {
             <i class="fa-solid fa-arrow-left"></i>
             <span> Previous Item</span>
           </a>
-
-          {/* <a>
-            <span>Next Item </span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </a> */}
         </div>
         <div className="itemsMidSection">
           <LefftView />

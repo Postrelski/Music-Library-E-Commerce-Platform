@@ -7,6 +7,7 @@ import Item2 from "./pages/Item2";
 import Item3 from "./pages/Item3";
 import ErrorPage from "./pages/ErrorPage";
 import Serum from "./pages/Serum";
+import Drums from "./pages/Drums";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/item2" element={<Item2 />} />
           <Route path="/item3" element={<Item3 />} />
           <Route path="/serum" element={<Serum />} />
+          <Route path="/drums" element={<Drums />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>

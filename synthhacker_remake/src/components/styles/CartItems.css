@@ -14,7 +14,7 @@
 /* variable will trigger different class, depending on id */
 /* I want to make this more dynamic */
 .cart_images1{
-    background-image: url(".././assets/pic1.png");
+    background-image: url("../../../public/images/pic1.png");
     height: 150px;
     width: 150px;
     background-position: center;
@@ -24,7 +24,7 @@
 }
 
 .cart_images2{
-    background-image: url(".././assets/pic2.png");
+    background-image: url("../../../public/images/pic2.png");
     height: 150px;
     width: 150px;
     background-position: center;
@@ -34,7 +34,7 @@
 }
 
 .cart_images3{
-    background-image: url(".././assets/pic3.png");
+    background-image: url("../../../public/images/pic3.png");
     height: 150px;
     width: 150px;
     background-position: center;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import "./styles/Navbar.css";
 
 function Navbar(props) {
   const [bars, setBars] = useState("tabs tabs-hidden");

@@ -1,8 +1,7 @@
 import React from "react";
-import "./Product.css";
+import "./styles/Product.css";
 
-function Product(props, getFromChild) {
-  //   getFromChild(props.title);
+function Product(props) {
   return (
     <div className="product-container">
       <a href={props.href}>
