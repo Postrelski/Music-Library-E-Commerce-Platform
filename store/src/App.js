@@ -8,6 +8,8 @@ import Item3 from "./pages/Item3";
 import ErrorPage from "./pages/ErrorPage";
 import Serum from "./pages/Serum";
 import Drums from "./pages/Drums";
+import Success from "./pages/Success";
+import Cancel from "./pages/Cancel";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/item3" element={<Item3 />} />
           <Route path="/serum" element={<Serum />} />
           <Route path="/drums" element={<Drums />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="/cancel" element={<Cancel />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>

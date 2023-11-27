@@ -15,8 +15,8 @@ app.use(express.static("public"));
 app.use(express.json());
 
 app.post("/checkout", async (req, res) => {
-  // do some stuff
   console.log(req.body);
+  // should this be req.body.products?
   const items = req.body.items;
   let lineItems = [];
   items.forEach((item) => {
@@ -29,7 +29,7 @@ app.post("/checkout", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: lineItems,
     mode: "payment",
-    succes_url: "http://localhost:3000/success",
+    success_url: "http://localhost:3000/success",
     cancel_url: "http://localhost:3000/cancel",
   });
 
