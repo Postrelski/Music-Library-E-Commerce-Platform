@@ -25,23 +25,32 @@ function Cart() {
   }
 
   const checkout = async () => {
-    await fetch("http://localhost:4000/checkout", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ items: products }),
-    })
-      .then((response) => {
-        return response.json();
+    var arrayFromStroage = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
+    var arrayLength = 0;
+    if (arrayFromStroage) {
+      arrayLength = arrayFromStroage.length;
+    }
+
+    if (arrayLength >= 1) {
+      await fetch("http://localhost:4000/checkout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ items: products }),
       })
-      .then((response) => {
-        if (response.url) {
-          window.location.assign(response.url); //forwarding user to stripe
-        }
-      });
-    // now clear the cart
-    clear();
+        .then((response) => {
+          return response.json();
+        })
+        .then((response) => {
+          if (response.url) {
+            window.location.assign(response.url); //forwarding user to stripe
+            clear();
+          }
+        });
+    } else {
+      alert("cart is empty!");
+    }
   };
 
   return (
