@@ -1,0 +1,33 @@
+
+[
+    { 
+        "title": "Anthem", 
+        "price": 10, 
+        "href": "/item1", 
+        "pic": "../images/pic1.png", 
+        "pic_url": "cart_images1",
+        "key": 1 ,
+        "id": "price_1OHAXAEoL5f3nSze3rB78Pcg",
+        "desc": "Info about product 1."
+    },
+    { 
+        "title": "Lucid", 
+        "price": 15, 
+        "href": "/item2", 
+        "pic": "../images/pic2.png", 
+        "pic_url": "cart_images2",
+        "key": 2, 
+        "id": "price_1OHAYwEoL5f3nSzeKSYIquHW",
+        "desc": "Info about product 2."
+    },
+    { 
+        "title": "Soulect", 
+        "price": 5, 
+        "href": "/item3", 
+        "pic": "../images/pic3.png", 
+        "pic_url": "cart_images3",
+        "key": 3,
+        "id": "price_1OHAZnEoL5f3nSzeCYdP95Nu",
+        "desc": "Info about product 3."
+    }
+]
