@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.static("public"));
 app.use(express.json());
 
-app.post("/cart", async (req, res) => {
+app.post("/checkout", async (req, res) => {
   // do some stuff
   console.log(req.body);
   const items = req.body.items;
