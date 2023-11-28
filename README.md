@@ -3,7 +3,7 @@
 =======
 
 
-Building an e-commerce site to sell digital audio samples and presets. Created with React.js.
+Building an e-commerce site to sell digital audio samples and presets. Created with React.js and Stripe.
 
 Front-End portion is nearly complete.
 
