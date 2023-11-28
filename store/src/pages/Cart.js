@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import "./styles/Cart.css";
 
 function Cart() {
-  // this is literally just to reload the component....
+  // reload componenet if ADD / Remove is clicked....
   const [update, setUpdate] = useState(true);
   function updateTime() {
     setUpdate(!update);
@@ -53,11 +53,9 @@ function Cart() {
   return (
     <>
       <Navbar />
-
       {total == 0 && (
         <p className="empty_cart">Looks like your cart is empty!</p>
       )}
-
       {total > 0 && (
         <div className="class_items_box">
           {products.map((x) => (
@@ -75,15 +73,13 @@ function Cart() {
           ))}
         </div>
       )}
-
-      {/* this could be a serparate component */}
+      {/* this could be a serparate component? */}
       <div className="checkout_box">
         <div>Subtotal ${total} USD</div>
         <button className="checkout_button" onClick={checkout}>
           CHECK OUT
         </button>
       </div>
-
       <Footer />
     </>
   );

@@ -26,8 +26,3 @@ function RightView(props) {
 }
 
 export default RightView;
-
-// id = "1";
-// price = { price };
-// update = { updateTime };
-// title = { title };

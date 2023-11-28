@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles/Navbar.css";
 
 function Navbar(props) {
-  const [bars, setBars] = useState("tabs tabs-hidden");
+  // get the data from local storage
   let products = [];
   if (localStorage.getItem("PRODUCT_ARRAY")) {
     products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
@@ -15,6 +15,7 @@ function Navbar(props) {
   }
 
   // dynamically set the nav icon
+  const [bars, setBars] = useState("tabs tabs-hidden");
   function barsIconHandler() {
     if (bars === "tabs") {
       setBars("tabs tabs-hidden");

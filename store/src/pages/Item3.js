@@ -13,7 +13,7 @@ function Item3() {
   const pic = data[2].pic;
   const pic_url = data[2].pic_url;
 
-  // this is literally just to reload the page....
+  // reload componenet if ADD / Remove is clicked....
   const [update, setUpdate] = useState(true);
   function updateTime() {
     setUpdate(!update);

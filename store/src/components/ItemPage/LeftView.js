@@ -1,5 +1,7 @@
 import "./LeftView.css";
 
+// this will be set with props for each item...
+
 function LefftView(props) {
   return (
     <div className="leftViewContainer">

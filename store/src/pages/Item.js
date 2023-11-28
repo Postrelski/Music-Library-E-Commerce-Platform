@@ -14,7 +14,7 @@ function Item() {
   const pic = data[0].pic;
   const pic_url = data[0].pic_url;
 
-  // this is literally just to reload the page....
+  // reload componenet if ADD / Remove is clicked....
   const [update, setUpdate] = useState(true);
   function updateTime() {
     setUpdate(!update);
@@ -23,7 +23,6 @@ function Item() {
   return (
     <>
       <Navbar />
-
       <div className="item_page_container">
         <div className="arrows_container">
           <a></a>
@@ -32,7 +31,6 @@ function Item() {
             <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
-
         <div className="itemsMidSection">
           <LefftView />
           <div className="image_buttons_pair">

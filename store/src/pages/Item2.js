@@ -13,7 +13,7 @@ function Item2() {
   const pic = data[1].pic;
   const pic_url = data[1].pic_url;
 
-  // this is literally just to reload the page....
+  // reload componenet if ADD / Remove is clicked....
   const [update, setUpdate] = useState(true);
   function updateTime() {
     setUpdate(!update);
@@ -28,7 +28,6 @@ function Item2() {
             <i class="fa-solid fa-arrow-left"></i>
             <span> Previous Item</span>
           </a>
-
           <a href="/item3">
             <span>Next Item </span>
             <i class="fa-solid fa-arrow-right"></i>

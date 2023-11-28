@@ -2,10 +2,8 @@ import "./styles/CartItems.css";
 import AddButton from "./buttons/AddButton";
 import RemoveButton from "./buttons/RemoveButton";
 
-// ../images/pic1.png
-// const picVariable = `cart_images${props.id}`;
-
 function CartItems(props) {
+  // grab the CSS class name form the JSON file
   const picVariable = props.pic_url;
 
   return (
