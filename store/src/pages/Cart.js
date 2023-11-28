@@ -5,17 +5,19 @@ import Footer from "../components/Footer";
 import "./styles/Cart.css";
 
 function Cart() {
-  // this is literally just to reload the page....
+  // this is literally just to reload the component....
   const [update, setUpdate] = useState(true);
   function updateTime() {
     setUpdate(!update);
   }
 
+  // get the array from local storage
   let products = [];
   if (localStorage.getItem("PRODUCT_ARRAY")) {
     products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
   }
 
+  // find the total number of products
   let total = 0;
   products.map((x) => (total += Number(x.quantity) * Number(x.price)));
 
@@ -24,14 +26,9 @@ function Cart() {
     window.localStorage.clear();
   }
 
+  // Call to backend Stripe API
   const checkout = async () => {
-    var arrayFromStroage = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
-    var arrayLength = 0;
-    if (arrayFromStroage) {
-      arrayLength = arrayFromStroage.length;
-    }
-
-    if (arrayLength >= 1) {
+    if (total >= 1) {
       await fetch("http://localhost:4000/checkout", {
         method: "POST",
         headers: {
@@ -57,28 +54,36 @@ function Cart() {
     <>
       <Navbar />
 
-      <div className="class_items_box">
-        {products.map((x) => (
-          <CartItems
-            id={x.productID}
-            key={x.productID}
-            title={x.title}
-            pic_url={x.pic_url}
-            quantity={x.quantity}
-            total={Number(x.quantity) * Number(x.price)}
-            onSetUpdate={updateTime}
-            href={`/item${x.productID}`}
-            image={`pic${x.productID}.png`}
-          />
-        ))}
-      </div>
+      {total == 0 && (
+        <p className="empty_cart">Looks like your cart is empty!</p>
+      )}
 
+      {total > 0 && (
+        <div className="class_items_box">
+          {products.map((x) => (
+            <CartItems
+              id={x.productID}
+              key={x.productID}
+              title={x.title}
+              pic_url={x.pic_url}
+              quantity={x.quantity}
+              total={Number(x.quantity) * Number(x.price)}
+              onSetUpdate={updateTime}
+              href={`/item${x.productID}`}
+              image={`pic${x.productID}.png`}
+            />
+          ))}
+        </div>
+      )}
+
+      {/* this could be a serparate component */}
       <div className="checkout_box">
         <div>Subtotal ${total} USD</div>
         <button className="checkout_button" onClick={checkout}>
           CHECK OUT
         </button>
       </div>
+
       <Footer />
     </>
   );
