@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-# e-commerce-with-backend
+# Digital Goods store connected to Stripe API
 =======
-# React-Shopping-Cart
+
 
 Building an e-commerce site to sell digital audio samples and presets. Created with React.js.
 
