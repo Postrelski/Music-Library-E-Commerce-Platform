@@ -1,4 +1,4 @@
-button{
+.updateBTN, .checkout_button, .addToCarBTN, .addBTN{
     background-color: rgb(77, 77, 77);
     height: 50px;
     color: white;
@@ -11,22 +11,11 @@ button{
     /* margin: 10px; */
 }
 
-button:hover{
+.updateBTN:hover, .checkout_button:hover, .addToCarBTN:hover, .addBTN:hover{
     background-color: rgb(157, 157, 157);
 }
 
-.add_remove{
-    margin-top: 5px;
+
+.updateBTN{
+    margin-top: 10px;
 }
-
-.addBTN{
-    margin-right: 10px;
-}
-
-
-/* @media (max-width: 768px) {
-    .removeBTN{
-        margin-top: 10px;
-    }
-    
-} */

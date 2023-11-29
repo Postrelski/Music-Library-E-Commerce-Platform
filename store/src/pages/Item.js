@@ -13,12 +13,7 @@ function Item() {
   const price = data[0].price;
   const pic = data[0].pic;
   const pic_url = data[0].pic_url;
-
-  // reload componenet if ADD / Remove is clicked....
-  const [update, setUpdate] = useState(true);
-  function updateTime() {
-    setUpdate(!update);
-  }
+  const href = data[0].href;
 
   return (
     <>
@@ -38,9 +33,9 @@ function Item() {
             <RightView
               id={pID}
               price={price}
-              update={updateTime}
               title={title}
               pic_url={pic_url}
+              href={href}
             />
           </div>
         </div>

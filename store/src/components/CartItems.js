@@ -1,6 +1,6 @@
 import "./styles/CartItems.css";
-import AddButton from "./buttons/AddButton";
-import RemoveButton from "./buttons/RemoveButton";
+import Delete from "./buttons/Delete";
+import Quantity from "./buttons/Quantity";
 
 function CartItems(props) {
   // grab the CSS class name form the JSON file
@@ -18,8 +18,8 @@ function CartItems(props) {
       </div>
 
       <div className="buttons_container">
-        <AddButton id={props.id} update={props.onSetUpdate}></AddButton>
-        <RemoveButton id={props.id} update={props.onSetUpdate}></RemoveButton>
+        <Quantity id={props.id} updateLocal={props.updateLocal} />
+        <Delete id={props.id} />
       </div>
     </div>
   );

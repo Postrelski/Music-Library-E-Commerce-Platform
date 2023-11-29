@@ -11,7 +11,7 @@ function Navbar(props) {
   // add all the quantities from the objects
   let totalQuantity = 0;
   for (let i = 0; i < products.length; i++) {
-    totalQuantity += products[i].quantity;
+    totalQuantity += Number(products[i].quantity);
   }
 
   // dynamically set the nav icon

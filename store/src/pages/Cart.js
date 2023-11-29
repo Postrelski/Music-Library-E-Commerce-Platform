@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import CartItems from "../components/CartItems";
 import Footer from "../components/Footer";
+import Update from "../components/buttons/Update";
+import Checkout from "../components/buttons/Checkout";
+
 import "./styles/Cart.css";
 
 function Cart() {
-  // reload componenet if ADD / Remove is clicked....
-  const [update, setUpdate] = useState(true);
-  function updateTime() {
-    setUpdate(!update);
-  }
-
   // get the array from local storage
   let products = [];
   if (localStorage.getItem("PRODUCT_ARRAY")) {
@@ -28,27 +25,28 @@ function Cart() {
 
   // Call to backend Stripe API
   const checkout = async () => {
-    if (total >= 1) {
-      await fetch("http://localhost:4000/checkout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ items: products }),
+    await fetch("http://localhost:4000/checkout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ items: products }),
+    })
+      .then((response) => {
+        return response.json();
       })
-        .then((response) => {
-          return response.json();
-        })
-        .then((response) => {
-          if (response.url) {
-            window.location.assign(response.url); //forwarding user to stripe
-            clear();
-          }
-        });
-    } else {
-      alert("cart is empty!");
-    }
+      .then((response) => {
+        if (response.url) {
+          window.location.assign(response.url); //forwarding user to stripe
+          clear();
+        }
+      });
   };
+
+  function updateLocal() {
+    console.log("inside Cart.js, update the local storage and refresh");
+    const trigger = true;
+  }
 
   return (
     <>
@@ -66,20 +64,21 @@ function Cart() {
               pic_url={x.pic_url}
               quantity={x.quantity}
               total={Number(x.quantity) * Number(x.price)}
-              onSetUpdate={updateTime}
-              href={`/item${x.productID}`}
+              href={x.href}
               image={`pic${x.productID}.png`}
+              updateLocal={updateLocal}
             />
           ))}
         </div>
       )}
-      {/* this could be a serparate component? */}
-      <div className="checkout_box">
-        <div>Subtotal ${total} USD</div>
-        <button className="checkout_button" onClick={checkout}>
-          CHECK OUT
-        </button>
-      </div>
+
+      {total > 0 && (
+        <div className="checkout_box">
+          <Update updateLocal={updateLocal} />
+          <Checkout total={total} checkout={checkout} />
+        </div>
+      )}
+
       <Footer />
     </>
   );

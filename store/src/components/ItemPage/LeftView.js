@@ -1,4 +1,4 @@
-import "./LeftView.css";
+import "./styles/LeftView.css";
 
 // this will be set with props for each item...
 

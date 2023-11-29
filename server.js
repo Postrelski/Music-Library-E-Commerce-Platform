@@ -38,6 +38,8 @@ app.post("/checkout", async (req, res) => {
       url: session.url,
     })
   );
+
+  // window.localStorage.clear();
 });
 
 app.listen(4000, () => console.log("Listening on port 4000!"));

@@ -26,13 +26,13 @@ function AddButton(props) {
     }
 
     // push the array to local storage && refresh the component
-    props.update();
     window.localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(products));
+    window.location.reload();
   }
 
   return (
     <button className="add_remove addBTN" onClick={addItemHandler}>
-      Add
+      Add +1
     </button>
   );
 }
