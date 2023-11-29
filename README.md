@@ -13,4 +13,6 @@ Front-End portion is nearly complete.
 
 <img width="1895" alt="Screen Shot 2023-11-29 at 4 51 40 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/b8b2760b-1005-4638-9704-c1dc7031ad87">
 
+Backend succesfully connects to Stripe API
+
 <img width="1251" alt="Screen Shot 2023-11-28 at 10 52 16 AM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/96a7453b-6509-4e71-9500-7a8386362970">
