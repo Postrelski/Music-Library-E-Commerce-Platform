@@ -9,6 +9,10 @@
 }
 
 .checkout_box{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    float: right;
     text-align: right;
     margin: 0;
     padding: 0;
