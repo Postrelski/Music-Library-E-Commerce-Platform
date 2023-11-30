@@ -3,7 +3,7 @@
 
 
 
-Building an e-commerce site to sell digital audio samples and presets. Created with React.js and Stripe API.
+Built an e-commerce site to sell digital audio samples and presets. Created with React.js, Express.js and Stripe API.
 
 <img width="1737" alt="Screen Shot 2023-11-30 at 1 12 25 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/b876ebc4-f884-46f5-8864-6bb7e9cbc374">
 <img width="1731" alt="Screen Shot 2023-11-30 at 1 12 33 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/52ab341a-72ee-4406-817f-4ad4967657aa">
