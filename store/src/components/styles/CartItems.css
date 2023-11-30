@@ -11,8 +11,7 @@
     padding-right: 100px;
 }
 
-/* variable will trigger different class, depending on id */
-/* I want to make this more dynamic */
+/* variable will trigger different class, depending classname obtained thru JSON file*/
 .cart_images1{
     background-image: url("../../../public/images/pic1.png");
     height: 150px;
@@ -42,8 +41,8 @@
     background-size: contain;
     cursor: pointer;
 }
-/* -------- */
 
+/* -------- */
 
 .align{
     margin: auto;
@@ -54,31 +53,24 @@
     display:contents;
 }
 
-
 @media (max-width: 780px) {
     .cart_fold{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        
+    }
+    .top_title{
+        padding-top: 10px;
+    }
+    .align{
+        margin: 0;
     }
 }
 
 .item_container p {
     font-size: 14px;
     opacity: .7;
-}
-
-@media (max-width: 700px) {
-
-    /* .item_container{
-        flex-direction: column;
-        align-items: center;
-    } */
-    /* button{
-        width: 100px;
-        text-align: center;
-    } */
-
 }
 
 .item_container:nth-child(odd){

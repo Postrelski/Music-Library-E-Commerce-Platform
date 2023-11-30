@@ -1,4 +1,9 @@
 .deleteBTN{
     margin-left: 10px;
     cursor: pointer;
+    /* background: none; */
+	/* color: inherit; */
+	/* border: none; */
+	/* font: inherit; */
+	outline: inherit;
 }

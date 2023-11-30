@@ -1,10 +1,8 @@
-import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import CartItems from "../components/CartItems";
 import Footer from "../components/Footer";
 import Update from "../components/buttons/Update";
 import Checkout from "../components/buttons/Checkout";
-
 import "./styles/Cart.css";
 
 function Cart() {
@@ -44,17 +42,13 @@ function Cart() {
     clearShoppingCart();
   };
 
-  function updateLocal() {
-    console.log("inside Cart.js, update the local storage and refresh");
-  }
-
   return (
     <>
       <Navbar />
-      {total == 0 && (
+      {products.length == 0 && (
         <p className="empty_cart">Looks like your cart is empty!</p>
       )}
-      {total > 0 && (
+      {products.length > 0 && (
         <div className="class_items_box">
           {products.map((x) => (
             <CartItems
@@ -66,15 +60,14 @@ function Cart() {
               total={Number(x.quantity) * Number(x.price)}
               href={x.href}
               image={`pic${x.productID}.png`}
-              updateLocal={updateLocal}
             />
           ))}
         </div>
       )}
 
-      {total > 0 && (
+      {products.length > 0 && (
         <div className="checkout_box">
-          <Update updateLocal={updateLocal} />
+          <Update />
           <Checkout total={total} checkout={checkout} />
         </div>
       )}

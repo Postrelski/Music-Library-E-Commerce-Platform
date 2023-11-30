@@ -4,12 +4,12 @@
     margin-top: 30px;
 }
 
-/* Make the item pages responsive! */
 .image_buttons_pair{
     display:contents;
 }
 
-@media (max-width: 1000px) {
+/* first adjustment for the item page (collapsed view)  */
+@media (max-width: 1200px) {
     .itemsMidSection{
         flex-direction: column-reverse;
     }
@@ -19,10 +19,6 @@
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-    .item_page_container{
-        /* padding-left: 50px; */
-        /* padding-right: 50px; */
-    }
     .leftViewContainer{
         text-align: left;
         margin: auto;
@@ -30,6 +26,7 @@
     }
 }
 
+/* seond adjustment for the item page (mobile view)  */
 @media (max-width: 768px) {
 
     .image_buttons_pair{

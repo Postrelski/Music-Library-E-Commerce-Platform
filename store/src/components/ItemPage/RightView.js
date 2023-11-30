@@ -10,14 +10,6 @@ function RightView(props) {
       <hr className="product_line"></hr>
       <p className="title">{props.title}</p>
       <p className="price">${props.price} USD</p>
-      {/* <Quantity
-        id={props.id}
-        price={props.price}
-        update={props.update}
-        title={props.title}
-        pic_url={props.pic_url}
-        href={props.href}
-      /> */}
       <AddButton
         id={props.id}
         price={props.price}
@@ -26,8 +18,6 @@ function RightView(props) {
         pic_url={props.pic_url}
         href={props.href}
       />
-      {/* <AddToCart /> */}
-      {/* <Update /> */}
     </div>
   );
 }

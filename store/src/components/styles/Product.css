@@ -19,3 +19,17 @@
 .opacity{
     opacity: .7;
 }
+
+@media (max-width: 700px) {
+    .serum_product_images{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .serum_product_images{
+        width: 270px;
+        height: 270px;
+    }
+}

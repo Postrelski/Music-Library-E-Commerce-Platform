@@ -2,7 +2,6 @@ import "./styles/Buttons.css";
 
 function Update(props) {
   function updateHandler() {
-    // props.updateLocal();
     window.location.reload();
   }
 

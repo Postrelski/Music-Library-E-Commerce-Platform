@@ -8,6 +8,7 @@ import "./styles/Item.css";
 import data from "../data.json";
 
 function Item() {
+  // Get the data from JSON file
   const pID = data[0].id;
   const title = data[0].title;
   const price = data[0].price;
@@ -19,6 +20,7 @@ function Item() {
     <>
       <Navbar />
       <div className="item_page_container">
+        {/* This is for the arrows */}
         <div className="arrows_container">
           <a></a>
           <a href="/item2">
@@ -26,6 +28,7 @@ function Item() {
             <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
+        {/* this is for the mid section with parts of page */}
         <div className="itemsMidSection">
           <LefftView />
           <div className="image_buttons_pair">

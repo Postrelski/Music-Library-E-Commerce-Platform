@@ -5,7 +5,7 @@ function Product(props) {
   return (
     <div className="product-container">
       <a href={props.href}>
-        <img src={props.pic}></img>
+        <img className="serum_product_images" src={props.pic}></img>
       </a>
       <a href={props.href}>
         <p className="opacity">{props.title}</p>
