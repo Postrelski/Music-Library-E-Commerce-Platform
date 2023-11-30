@@ -21,17 +21,16 @@ function Quantity(props) {
     let searchItem = event.target.id;
     let foundObject = products.find((obj) => obj.productID === searchItem);
 
-    // if "UPDATE CART" is pressed trigger this?
     if (foundObject) {
       foundObject.quantity = event.target.value;
-      // if value is 0 or less, remove it
+      // if exists and new value is 0 or less, remove it
       if (foundObject.quantity <= 0) {
         products = products.filter(function (el) {
           return el.productID != props.id;
         });
       }
     } else {
-      // if not found push it to the array, value must be positive
+      // if not found & value is positive, push it to the array
       if (event.target.value > 0) {
         products.push({
           productID: props.id,

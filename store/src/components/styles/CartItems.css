@@ -53,6 +53,11 @@
     display:contents;
 }
 
+.buttons_container{
+    margin: auto;
+    margin-right: 0;
+}
+
 @media (max-width: 780px) {
     .cart_fold{
         display: flex;
@@ -66,6 +71,9 @@
     .align{
         margin: 0;
     }
+    .buttons_container{
+        padding-left: 10px;
+    }
 }
 
 .item_container p {
@@ -77,7 +85,3 @@
     background-color: #F4F4F9;
 }
 
-.buttons_container{
-    margin: auto;
-    margin-right: 0;
-}

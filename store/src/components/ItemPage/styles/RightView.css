@@ -9,7 +9,8 @@
     font-size: 20px;
     opacity: .6;
     font-weight: bold;
-   }
+}
+
 .product_line{
     opacity: .3;
 }
@@ -24,8 +25,12 @@
 
 @media (max-width: 768px) {
     .right_view_container{
-       
+
         text-align: center;
         margin: auto;
+        width: 200px;
+    }
+    .product_line{
+        margin-top: 20px;
     }
 }
