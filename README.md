@@ -21,8 +21,8 @@ Here are some shots of the mobile / resposive screens
 <hr>
 <hr>
 <hr>
-<img width="477" alt="Screen Shot 2023-11-30 at 1 13 23 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/102b8c66-2839-47b7-b752-253b3441a50c">
-<img width="483" alt="Screen Shot 2023-11-30 at 1 13 30 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/d40ef409-a732-4217-9ef9-ad96e1861aca">
+<img width="100" alt="Screen Shot 2023-11-30 at 1 13 23 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/102b8c66-2839-47b7-b752-253b3441a50c">
+<img width="100" alt="Screen Shot 2023-11-30 at 1 13 30 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/d40ef409-a732-4217-9ef9-ad96e1861aca">
 <hr>
 <hr>
 <hr>
