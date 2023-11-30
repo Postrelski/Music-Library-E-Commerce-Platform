@@ -18,7 +18,15 @@ function CartItems(props) {
       </div>
 
       <div className="buttons_container">
-        <Quantity id={props.id} quantity={props.quantity} />
+        <Quantity
+          href={props.href}
+          id={props.id}
+          pic_url={props.pic_url}
+          price={props.price}
+          productID={props.id}
+          quantity={props.quantity}
+          title={props.title}
+        />
         <Delete id={props.id} />
       </div>
     </div>
@@ -26,3 +34,16 @@ function CartItems(props) {
 }
 
 export default CartItems;
+
+{
+  /* <CartItems
+              id={x.productID}
+              key={x.productID}
+              title={x.title}
+              pic_url={x.pic_url}
+              quantity={x.quantity}
+              total={Number(x.quantity) * Number(x.price)}
+              href={x.href}
+              image={`pic${x.productID}.png`}
+            /> */
+}

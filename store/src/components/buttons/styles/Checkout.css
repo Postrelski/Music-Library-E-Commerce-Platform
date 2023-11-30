@@ -1,3 +1,10 @@
 .checkout_title{
     padding-bottom: 10px;
 }
+
+/* remove mergin left at small screens */
+@media (max-width: 380px) {
+    .checkout_title{
+        padding-top: 10px;
+    }
+}

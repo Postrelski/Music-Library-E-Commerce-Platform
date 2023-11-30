@@ -7,3 +7,10 @@
 	/* font: inherit; */
 	outline: inherit;
 }
+
+/* remove mergin left at small screens */
+@media (max-width: 440px) {
+    .deleteBTN{
+        margin-left: 0px;
+    }
+}

@@ -76,6 +76,19 @@
     }
 }
 
+/* for super small phones */
+@media (max-width: 380px) {
+    .item_container{
+        flex-direction: column;
+    }
+    .buttons_container{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+    }
+}
+
 .item_container p {
     font-size: 14px;
     opacity: .7;

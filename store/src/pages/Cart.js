@@ -60,6 +60,7 @@ function Cart() {
               total={Number(x.quantity) * Number(x.price)}
               href={x.href}
               image={`pic${x.productID}.png`}
+              price={x.price}
             />
           ))}
         </div>

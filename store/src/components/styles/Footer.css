@@ -25,3 +25,10 @@ footer {
         width: 270px;
     }
 }
+
+/* super small screens */
+@media (max-width: 380px) {
+    .footer_text{
+        width: 200px;
+    }
+}

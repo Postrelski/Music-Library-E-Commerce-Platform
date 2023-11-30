@@ -30,3 +30,11 @@
     padding-left: 50px;
     font-size: 20px;
 }
+
+/* super small screens*/
+@media (max-width: 380px) {
+    .checkout_box{
+        flex-direction: column;
+    }
+    
+}
