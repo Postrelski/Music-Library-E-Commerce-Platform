@@ -22,6 +22,7 @@ function AddButton(props) {
         quantity: 1,
         price: props.price,
         pic_url: props.pic_url,
+        href: props.href,
       });
     }
 
@@ -32,7 +33,7 @@ function AddButton(props) {
 
   return (
     <button className="add_remove addBTN" onClick={addItemHandler}>
-      Add +1
+      Add To Cart
     </button>
   );
 }

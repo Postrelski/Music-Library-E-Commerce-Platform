@@ -1,13 +1,15 @@
 import "./styles/Quantity.css";
+import { useState } from "react";
 
 function Quantity(props) {
+  const [num, setNum] = useState(props.quantity);
+
   function quantityOnChangeHandler(event) {
     //  prevent reload
     event.preventDefault();
-    // this is the new quantity amount
-    console.log(event.target.value);
-    // update the local storage quantity that matches this ID
-    console.log(event.target.id);
+
+    // update state for input value
+    setNum(event.target.value);
 
     // get the local storage
     let products = [];
@@ -19,18 +21,7 @@ function Quantity(props) {
     let searchItem = event.target.id;
     let foundObject = products.find((obj) => obj.productID === searchItem);
 
-    // if "UPDATE CART" is pressed trigger this function
-    // props.updateLocal();
-    // if (props.updateLocal()) {
-    //   updateTheThing(foundObject, products, event);
-    // }
-    updateTheThing(foundObject, products, event);
-  }
-
-  function updateTheThing(foundObject, products, event) {
-    console.log("update the thing");
-    console.log(foundObject);
-
+    // if "UPDATE CART" is pressed trigger this?
     if (foundObject) {
       foundObject.quantity = event.target.value;
       // if value is 0 or less, remove it
@@ -64,7 +55,7 @@ function Quantity(props) {
         name="quantity"
         min="1"
         max="99"
-        // value={val}
+        value={num}
       />
     </form>
   );

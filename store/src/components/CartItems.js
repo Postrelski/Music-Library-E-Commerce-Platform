@@ -18,7 +18,11 @@ function CartItems(props) {
       </div>
 
       <div className="buttons_container">
-        <Quantity id={props.id} updateLocal={props.updateLocal} />
+        <Quantity
+          id={props.id}
+          updateLocal={props.updateLocal}
+          quantity={props.quantity}
+        />
         <Delete id={props.id} />
       </div>
     </div>

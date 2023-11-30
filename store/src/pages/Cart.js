@@ -19,7 +19,7 @@ function Cart() {
   products.map((x) => (total += Number(x.quantity) * Number(x.price)));
 
   // wipe the cart clean
-  function clear() {
+  function clearShoppingCart() {
     window.localStorage.clear();
   }
 
@@ -38,14 +38,14 @@ function Cart() {
       .then((response) => {
         if (response.url) {
           window.location.assign(response.url); //forwarding user to stripe
-          clear();
         }
       });
+
+    clearShoppingCart();
   };
 
   function updateLocal() {
     console.log("inside Cart.js, update the local storage and refresh");
-    const trigger = true;
   }
 
   return (
