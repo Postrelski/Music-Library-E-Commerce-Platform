@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # Digital Goods store connected to Stripe API
-=======
+
 
 
 Building an e-commerce site to sell digital audio samples and presets. Created with React.js and Stripe API.
