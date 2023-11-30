@@ -32,15 +32,17 @@ function Quantity(props) {
       }
     } else {
       // if not found push it to the array, value must be positive
-      products.push({
-        productID: props.id,
-        id: props.id,
-        title: props.title,
-        quantity: event.target.value,
-        price: props.price,
-        pic_url: props.pic_url,
-        href: props.href,
-      });
+      if (event.target.value > 0) {
+        products.push({
+          productID: props.id,
+          id: props.id,
+          title: props.title,
+          quantity: event.target.value,
+          price: props.price,
+          pic_url: props.pic_url,
+          href: props.href,
+        });
+      }
     }
     window.localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(products));
   }
