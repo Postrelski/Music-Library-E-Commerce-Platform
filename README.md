@@ -7,12 +7,12 @@ Building an e-commerce site to sell digital audio samples and presets. Created w
 
 Front-End portion is nearly complete.
 
-<img width="1810" alt="Screen Shot 2023-11-08 at 12 30 27 PM" src="https://github.com/Postrelski/React-Shopping-Cart/assets/71254889/efb31423-87e3-4dca-ab8e-c2a90ce5af4d">
+<img width="1775" alt="Screen Shot 2023-11-29 at 4 52 01 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/d7874ef0-c928-4083-928b-684f482ea96b">
 
-<img width="1809" alt="Screen Shot 2023-11-08 at 12 30 36 PM" src="https://github.com/Postrelski/React-Shopping-Cart/assets/71254889/000e3787-3050-4c18-b98f-1021b8c8bb58">
+<img width="1886" alt="Screen Shot 2023-11-29 at 4 51 47 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/d535a045-8e11-4605-a72d-99091fab0c80">
 
+<img width="1895" alt="Screen Shot 2023-11-29 at 4 51 40 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/b8b2760b-1005-4638-9704-c1dc7031ad87">
 
-<img width="1811" alt="Screen Shot 2023-11-08 at 12 30 19 PM" src="https://github.com/Postrelski/React-Shopping-Cart/assets/71254889/0bd302f7-02f4-46b2-8238-e62e14380986">
->>>>>>> 4dbb009a1f1ec8412ad1ea9ea9189e613f523f31
+Backend succesfully connects to Stripe API
 
-<img width="1251" alt="Screen Shot 2023-11-28 at 10 52 16 AM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/96a7453b-6509-4e71-9500-7a8386362970">
+<img width="1472" alt="Screen Shot 2023-11-29 at 5 00 00 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/c8e4f79c-51f2-4881-acc2-e7a3b16465dc">
