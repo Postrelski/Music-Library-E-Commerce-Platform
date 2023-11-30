@@ -37,9 +37,6 @@ Here are some shots of the mobile / resposive screens
 <hr>
 <hr>
 <img width="250" alt="Screen Shot 2023-11-30 at 1 14 12 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/4e1f5876-1e26-4e5d-bd21-a5c4ac7ca459">
-<hr>
-<hr>
-<hr>
 <img width="250" alt="Screen Shot 2023-11-30 at 1 14 24 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/7001b6f2-3140-4318-8be6-f2a5b632a7e9">
 <img width="250" alt="Screen Shot 2023-11-30 at 1 13 39 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/ad2d1561-7231-4133-a1c3-1e1e32282769">
 <img width="250" alt="Screen Shot 2023-11-30 at 1 23 16 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/c84d27df-9d09-463b-aab5-b61ece85e77f">
