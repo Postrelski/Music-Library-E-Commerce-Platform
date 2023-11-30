@@ -25,15 +25,14 @@ Here are some shots of the mobile / resposive screens
 <img width="483" alt="Screen Shot 2023-11-30 at 1 13 30 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/d40ef409-a732-4217-9ef9-ad96e1861aca">
 <hr>
 <hr>
-
-
 <img width="478" alt="Screen Shot 2023-11-30 at 1 13 49 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/8ec307f5-f3b7-496d-9f11-bc2cf0b82c8b">
 <img width="473" alt="Screen Shot 2023-11-30 at 1 14 00 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/848c3d60-592d-4a72-850a-8368047f22a1">
 <hr>
 <hr>
-<img width="473" alt="Screen Shot 2023-11-30 at 1 13 39 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/ad2d1561-7231-4133-a1c3-1e1e32282769">
 <img width="493" alt="Screen Shot 2023-11-30 at 1 14 12 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/4e1f5876-1e26-4e5d-bd21-a5c4ac7ca459">
+<img width="473" alt="Screen Shot 2023-11-30 at 1 13 39 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/ad2d1561-7231-4133-a1c3-1e1e32282769">
 <hr>
 <hr>
 <img width="474" alt="Screen Shot 2023-11-30 at 1 14 24 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/7001b6f2-3140-4318-8be6-f2a5b632a7e9">
 
+<img width="595" alt="Screen Shot 2023-11-30 at 1 21 03 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/dce5c49f-ee8b-45ed-aea0-95dc33b6b312">
