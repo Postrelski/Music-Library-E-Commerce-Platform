@@ -49,25 +49,10 @@ button.rec-dot{
     display: none;
 }
 
-/* .rec.rec-arrow-left:hover:enabled,
-.rec.rec-arrow-right:hover:enabled{
-    background-color: rgb(255, 255, 255);
-} */
-
 .rec.rec-arrow-left:hover:enabled,
 .rec.rec-arrow-right:hover:enabled{
     background-color: black;
     box-shadow: 0 0 1px 3px var(--clr-primary-400);
-}
-
-.slider-container{
-    /* margin-bottom: 370px; */
-    /* border: 1px solid rgb(245, 139, 139); */
-    /* margin-bottom: 800px; */
-
-}
-.rec{
-    /* height: 200px; */
 }
 
 
