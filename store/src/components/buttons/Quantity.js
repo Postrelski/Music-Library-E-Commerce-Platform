@@ -48,7 +48,12 @@ function Quantity(props) {
     }
 
     // update local storage
-    window.localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(products));
+    if (event.target.value >= 1 && event.target.value) {
+      window.localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(products));
+    } else {
+      // value must be 1 or greater!
+      // if 0 is entered and page is reloaded ...
+    }
   }
 
   return (
