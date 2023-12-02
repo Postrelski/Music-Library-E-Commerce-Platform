@@ -38,7 +38,6 @@ function Cart() {
           window.location.assign(response.url); //forwarding user to stripe
         }
       });
-
     clearShoppingCart();
   };
 

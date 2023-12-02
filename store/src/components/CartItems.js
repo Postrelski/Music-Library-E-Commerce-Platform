@@ -34,16 +34,3 @@ function CartItems(props) {
 }
 
 export default CartItems;
-
-{
-  /* <CartItems
-              id={x.productID}
-              key={x.productID}
-              title={x.title}
-              pic_url={x.pic_url}
-              quantity={x.quantity}
-              total={Number(x.quantity) * Number(x.price)}
-              href={x.href}
-              image={`pic${x.productID}.png`}
-            /> */
-}

@@ -21,6 +21,7 @@ function Quantity(props) {
     let searchItem = event.target.id;
     let foundObject = products.find((obj) => obj.productID === searchItem);
 
+    // if found do this
     if (foundObject) {
       foundObject.quantity = event.target.value;
       // if exists and new value is 0 or less, remove it
@@ -29,6 +30,7 @@ function Quantity(props) {
           return el.productID != props.id;
         });
       }
+      // if not found do this
     } else {
       // if not found & value is positive, push it to the array
       if (event.target.value > 0) {
@@ -42,7 +44,10 @@ function Quantity(props) {
           href: props.href,
         });
       }
+      // if not positive or 0, do nothing
     }
+
+    // update local storage
     window.localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(products));
   }
 
