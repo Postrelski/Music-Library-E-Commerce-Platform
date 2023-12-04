@@ -3,6 +3,7 @@ import CartItems from "../components/CartItems";
 import Footer from "../components/Footer";
 import Update from "../components/buttons/Update";
 import Checkout from "../components/buttons/Checkout";
+import ContinueShopping from "../components/buttons/ContinueShopping";
 import "./styles/Cart.css";
 
 function Cart() {
@@ -61,6 +62,7 @@ function Cart() {
       {products.length == 0 && (
         <p className="empty_cart">Looks like your cart is empty!</p>
       )}
+      {products.length == 0 && <ContinueShopping />}
       {products.length > 0 && (
         <div className="class_items_box">
           {products.map((x) => (

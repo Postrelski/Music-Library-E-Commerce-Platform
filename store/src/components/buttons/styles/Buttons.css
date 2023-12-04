@@ -1,4 +1,4 @@
-.updateBTN, .checkout_button, .addToCarBTN, .addBTN{
+.updateBTN, .checkout_button, .addToCarBTN, .addBTN, .continueShoppingBTN{
     background-color: rgb(77, 77, 77);
     height: 50px;
     color: white;
@@ -11,7 +11,7 @@
     /* margin: 10px; */
 }
 
-.updateBTN:hover, .checkout_button:hover, .addToCarBTN:hover, .addBTN:hover{
+.updateBTN:hover, .checkout_button:hover, .addToCarBTN:hover, .addBTN:hover, .continueShoppingBTN:hover{
     background-color: rgb(157, 157, 157);
 }
 
@@ -22,4 +22,13 @@
 
 .checkout_button{
     margin-left:10px ;
+}
+.continueShoppingBTN{
+    margin-left: 50px;
+}
+
+@media (max-width: 380px) {
+    .continueShoppingBTN{
+        padding: 8px;
+    }
 }
