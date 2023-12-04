@@ -12,6 +12,20 @@ function Cart() {
     products = JSON.parse(localStorage.getItem("PRODUCT_ARRAY"));
   }
 
+  // remove any 0 or negative values from products
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].quantity <= 0) {
+      // remove this guy
+      console.log(products[i]);
+      products = products.filter(function (el) {
+        return el.id != products[i].id;
+      });
+    }
+  }
+
+  // update the local storage
+  window.localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(products));
+
   // find the total number of products
   let total = 0;
   products.map((x) => (total += Number(x.quantity) * Number(x.price)));

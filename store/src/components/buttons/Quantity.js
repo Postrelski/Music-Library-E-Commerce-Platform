@@ -21,39 +21,11 @@ function Quantity(props) {
     let searchItem = event.target.id;
     let foundObject = products.find((obj) => obj.productID === searchItem);
 
-    // if found do this
-    if (foundObject) {
-      foundObject.quantity = event.target.value;
-      // if exists and new value is 0 or less, remove it
-      if (foundObject.quantity <= 0) {
-        products = products.filter(function (el) {
-          return el.productID != props.id;
-        });
-      }
-      // if not found do this
-    } else {
-      // if not found & value is positive, push it to the array
-      if (event.target.value > 0) {
-        products.push({
-          productID: props.id,
-          id: props.id,
-          title: props.title,
-          quantity: event.target.value,
-          price: props.price,
-          pic_url: props.pic_url,
-          href: props.href,
-        });
-      }
-      // if not positive or 0, do nothing
-    }
+    // update the quantity of the specific item
+    foundObject.quantity = event.target.value;
 
     // update local storage
-    if (event.target.value >= 1 && event.target.value) {
-      window.localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(products));
-    } else {
-      // value must be 1 or greater!
-      // if 0 is entered and page is reloaded ...
-    }
+    window.localStorage.setItem("PRODUCT_ARRAY", JSON.stringify(products));
   }
 
   return (
