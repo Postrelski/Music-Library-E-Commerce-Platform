@@ -6,7 +6,7 @@
         "pic": "../images/pic1.png", 
         "pic_url": "cart_images1",
         "key": 1 ,
-        "id": "price_1OHAXAEoL5f3nSze3rB78Pcg",
+        "id": "price_1OjSaALgfwAAD6ezlty9fJF7",
         "desc": "Info about product 1."
     },
     { 
@@ -16,7 +16,7 @@
         "pic": "../images/pic2.png", 
         "pic_url": "cart_images2",
         "key": 2, 
-        "id": "price_1OHAYwEoL5f3nSzeKSYIquHW",
+        "id": "price_1OjSaTLgfwAAD6ezP9M4KGin",
         "desc": "Info about product 2."
     },
     { 
@@ -26,7 +26,7 @@
         "pic": "../images/pic3.png", 
         "pic_url": "cart_images3",
         "key": 3,
-        "id": "price_1OHAZnEoL5f3nSzeCYdP95Nu",
+        "id": "price_1OjSakLgfwAAD6ezC1Olg4oR",
         "desc": "Info about product 3."
     }
 ]

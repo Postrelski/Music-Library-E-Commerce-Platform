@@ -1,13 +1,6 @@
-// sk_test_51NkXQqEoL5f3nSze6nJmK4rm3OxlgVY3NeRZRRIAdSO4Xp8NBJqpc1ggbBLRqjmGbC3HdDQgDUHAgSGZBcemSYHD00BXWjDM2E
-// Anthem = price_1OHAXAEoL5f3nSze3rB78Pcg
-// Lucid = price_1OHAYwEoL5f3nSzeKSYIquHW
-// Soulect = price_1OHAZnEoL5f3nSzeCYdP95Nu
-
 const express = require("express");
 var cors = require("cors");
-const stripe = require("stripe")(
-  "sk_test_51NkXQqEoL5f3nSze6nJmK4rm3OxlgVY3NeRZRRIAdSO4Xp8NBJqpc1ggbBLRqjmGbC3HdDQgDUHAgSGZBcemSYHD00BXWjDM2E"
-);
+const stripe = require("stripe")("secret key will go here");
 
 const app = express();
 app.use(cors());
@@ -39,6 +32,7 @@ app.post("/checkout", async (req, res) => {
     })
   );
 
+  // clear the local storage after succesful payment?
   // window.localStorage.clear();
 });
 
