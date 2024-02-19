@@ -8,6 +8,12 @@ app.use(cors());
 app.use(express.static("public"));
 app.use(express.json());
 
+// Middleware for error handling
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send("Something broke!");
+});
+
 // add this ->
 // MIDDLEWARE
 const whitelist = [
@@ -29,30 +35,34 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
+// Route for handling checkout
 app.post("/checkout", async (req, res) => {
-  console.log(req.body);
-  // should this be req.body.products?
-  const items = req.body.items;
-  let lineItems = [];
-  items.forEach((item) => {
-    lineItems.push({
-      price: item.id,
-      quantity: item.quantity,
+  try {
+    const items = req.body.items;
+    let lineItems = [];
+    items.forEach((item) => {
+      lineItems.push({
+        price: item.id,
+        quantity: item.quantity,
+      });
     });
-  });
 
-  const session = await stripe.checkout.sessions.create({
-    line_items: lineItems,
-    mode: "payment",
-    success_url: "http://localhost:3000/success",
-    cancel_url: "http://localhost:3000/cancel",
-  });
+    const session = await stripe.checkout.sessions.create({
+      line_items: lineItems,
+      mode: "payment",
+      success_url: "http://localhost:3000/success",
+      cancel_url: "http://localhost:3000/cancel",
+    });
 
-  res.send(
-    JSON.stringify({
-      url: session.url,
-    })
-  );
+    res.send(
+      JSON.stringify({
+        url: session.url,
+      })
+    );
+  } catch (error) {
+    // Forwarding the error to the error handling middleware
+    next(error);
+  }
 });
 
 // add this ->
