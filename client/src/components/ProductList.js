@@ -1,7 +1,7 @@
 import Product from "./Product.js";
 import "./styles/ProductList.css";
 import React from "react";
-import Carousel from "react-elastic-carousel";
+// import Carousel from "react-elastic-carousel";
 import data from "../data.json";
 
 function ProductList(props) {
@@ -14,7 +14,7 @@ function ProductList(props) {
 
   return (
     <div className="slider-container">
-      <Carousel breakPoints={breakPoints}>
+      {/* <Carousel breakPoints={breakPoints}>
         {data.map((item) => (
           <Product
             className="product"
@@ -25,7 +25,7 @@ function ProductList(props) {
             pic={item.pic}
           />
         ))}
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 }
