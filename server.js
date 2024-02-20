@@ -7,6 +7,8 @@ const path = require("path");
 
 const app = express();
 
+app.use(cors(corsOptions));
+
 // Middleware for CORS
 const whitelist = [
   "http://localhost:3000",
@@ -26,7 +28,6 @@ const corsOptions = {
     }
   },
 };
-app.use(cors(corsOptions));
 
 // Serve static files
 app.use(express.static("public"));
