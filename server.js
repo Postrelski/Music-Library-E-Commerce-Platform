@@ -7,15 +7,12 @@ const path = require("path");
 
 const app = express();
 
-app.use(cors(corsOptions));
-
-// Middleware for CORS
+// CORS Configuration
 const whitelist = [
   "http://localhost:3000",
   "http://localhost:8080",
   "https://calm-caverns-34597-37cce735fe7d.herokuapp.com",
 ];
-
 const corsOptions = {
   origin: function (origin, callback) {
     console.log("** Origin of request " + origin);
@@ -28,6 +25,9 @@ const corsOptions = {
     }
   },
 };
+
+// Apply CORS middleware
+app.use(cors(corsOptions));
 
 // Serve static files
 app.use(express.static("public"));
