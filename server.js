@@ -7,16 +7,7 @@ const path = require("path");
 
 const app = express();
 
-// Middleware
-app.use(cors());
-
-// Serve static files
-app.use(express.static("public"));
-
-// Parse JSON bodies
-app.use(express.json());
-
-// CORS Configuration
+// Middleware for CORS
 const whitelist = [
   "http://localhost:3000",
   "http://localhost:8080",
@@ -35,6 +26,12 @@ const corsOptions = {
   },
 };
 app.use(cors(corsOptions));
+
+// Serve static files
+app.use(express.static("public"));
+
+// Parse JSON bodies
+app.use(express.json());
 
 // Route for handling checkout
 app.post("/checkout", async (req, res, next) => {
