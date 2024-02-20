@@ -38,6 +38,7 @@ app.use(cors(corsOptions));
 
 // Route for handling checkout
 app.post("/checkout", async (req, res, next) => {
+  console.log("test after post request: ");
   try {
     const items = req.body.items;
     const lineItems = items.map((item) => ({
