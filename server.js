@@ -19,6 +19,7 @@ app.use(express.json());
 // CORS Configuration
 const whitelist = [
   "http://localhost:3000",
+  "http://localhost:4000",
   "http://localhost:8080",
   "https://calm-caverns-34597-37cce735fe7d.herokuapp.com/",
 ];
