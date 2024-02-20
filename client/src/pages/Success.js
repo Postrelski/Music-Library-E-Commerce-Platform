@@ -4,11 +4,11 @@ import "./styles/Success.css";
 
 function Success() {
   // wipe the cart clean
-  function clearShoppingCart() {
-    window.localStorage.clear();
-  }
+  // function clearShoppingCart() {
+  //   window.localStorage.clear();
+  // }
 
-  clearShoppingCart();
+  // clearShoppingCart();
 
   return (
     <>
