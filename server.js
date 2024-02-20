@@ -17,7 +17,7 @@ const corsOptions = {
   origin: function (origin, callback) {
     console.log("** Origin of request " + origin);
     console.log("here is the callback: " + callback);
-    if (whitelist.indexOf(origin) !== -1) {
+    if (!origin || whitelist.indexOf(origin) !== -1) {
       console.log("Origin acceptable");
       callback(null, true);
     } else {
