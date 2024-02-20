@@ -19,7 +19,6 @@ app.use(express.json());
 // CORS Configuration
 const whitelist = [
   "http://localhost:3000",
-  "http://localhost:4000",
   "http://localhost:8080",
   "https://calm-caverns-34597-37cce735fe7d.herokuapp.com/",
 ];
@@ -55,6 +54,7 @@ app.post("/checkout", async (req, res, next) => {
 
     res.json({ url: session.url });
   } catch (error) {
+    console.log("TESTING in Sever.js: " + error);
     next(error);
   }
 });
