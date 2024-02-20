@@ -36,11 +36,11 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-console.log("Are you reaching me?: After corsOptions");
+// console.log("Are you reaching me?: After corsOptions");
 
 // Route for handling checkout
 app.post("/checkout", async (req, res, next) => {
-  console.log("Are you reaching me?: app.post");
+  // console.log("Are you reaching me?: app.post");
   try {
     const items = req.body.items;
     const lineItems = items.map((item) => ({
@@ -57,12 +57,12 @@ app.post("/checkout", async (req, res, next) => {
 
     res.json({ url: session.url });
   } catch (error) {
-    console.log("TESTING in Sever.js: " + error);
+    // console.log("TESTING in Sever.js: " + error);
     next(error);
   }
 });
 
-console.log("made it to sttatic files in production");
+// console.log("made it to sttatic files in production");
 // Serve static files in production
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
@@ -71,7 +71,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-console.log("made it to port");
+// console.log("made it to port");
 // Start the server
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
