@@ -20,7 +20,7 @@ app.use(express.json());
 const whitelist = [
   "http://localhost:3000",
   "http://localhost:8080",
-  "https://calm-caverns-34597-37cce735fe7d.herokuapp.com/",
+  "https://calm-caverns-34597-37cce735fe7d.herokuapp.com",
 ];
 const corsOptions = {
   origin: function (origin, callback) {
@@ -36,9 +36,11 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
+console.log("Are you reaching me?: After corsOptions");
+
 // Route for handling checkout
 app.post("/checkout", async (req, res, next) => {
-  console.log("test after post request: ");
+  console.log("Are you reaching me?: app.post");
   try {
     const items = req.body.items;
     const lineItems = items.map((item) => ({
@@ -60,6 +62,7 @@ app.post("/checkout", async (req, res, next) => {
   }
 });
 
+console.log("made it to sttatic files in production");
 // Serve static files in production
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
@@ -68,6 +71,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+console.log("made it to port");
 // Start the server
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
