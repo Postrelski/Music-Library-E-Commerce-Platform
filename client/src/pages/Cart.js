@@ -36,8 +36,6 @@ function Cart() {
     window.localStorage.clear();
   }
 
-  // https://calm-caverns-34597-37cce735fe7d.herokuapp.com/cart
-
   // Call to backend Stripe API
   const checkout = async () => {
     await fetch("http://localhost:4000/checkout", {
