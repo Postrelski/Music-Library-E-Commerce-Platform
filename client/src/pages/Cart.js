@@ -31,11 +31,6 @@ function Cart() {
   let total = 0;
   products.map((x) => (total += Number(x.quantity) * Number(x.price)));
 
-  // wipe the cart clean
-  function clearShoppingCart() {
-    window.localStorage.clear();
-  }
-
   // Call to backend Stripe API
   const checkout = async () => {
     await fetch("http://localhost:4000/checkout", {
@@ -53,7 +48,6 @@ function Cart() {
           window.location.assign(response.url); //forwarding user to stripe
         }
       });
-    clearShoppingCart();
   };
 
   return (
