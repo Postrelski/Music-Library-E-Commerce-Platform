@@ -2,6 +2,8 @@
 
 This is an e-commerce site to sell digital audio samples and synth presets libraries. Created with React.js, Express.js and Stripe API.
 
+Visit the web app here: https://synth-guru-3-client.vercel.app/
+
 <img width="1737" alt="Screen Shot 2023-11-30 at 1 12 25 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/b876ebc4-f884-46f5-8864-6bb7e9cbc374">
 <img width="1731" alt="Screen Shot 2023-11-30 at 1 12 33 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/52ab341a-72ee-4406-817f-4ad4967657aa">
 <img width="1728" alt="Screen Shot 2023-11-30 at 1 12 41 PM" src="https://github.com/Postrelski/Synth-Ecommerce-Store/assets/71254889/384e4e16-316d-4a71-a033-0f41119d6f5e">
